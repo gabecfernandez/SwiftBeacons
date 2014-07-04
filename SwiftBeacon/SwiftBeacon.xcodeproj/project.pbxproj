@@ -12,6 +12,7 @@
 		69936D8519673EF5004518A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69936D8319673EF5004518A0 /* Main.storyboard */; };
 		69936D8719673EF5004518A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69936D8619673EF5004518A0 /* Images.xcassets */; };
 		69936D9319673EF5004518A0 /* SwiftBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69936D9219673EF5004518A0 /* SwiftBeaconTests.swift */; };
+		69936D9D1967405B004518A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69936D9C1967405B004518A0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		69936D8C19673EF5004518A0 /* SwiftBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69936D9119673EF5004518A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69936D9219673EF5004518A0 /* SwiftBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBeaconTests.swift; sourceTree = "<group>"; };
+		69936D9C1967405B004518A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69936D9D1967405B004518A0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 		69936D7119673EF4004518A0 = {
 			isa = PBXGroup;
 			children = (
+				69936D9C1967405B004518A0 /* CoreLocation.framework */,
 				69936D7C19673EF5004518A0 /* SwiftBeacon */,
 				69936D8F19673EF5004518A0 /* SwiftBeaconTests */,
 				69936D7B19673EF5004518A0 /* Products */,
@@ -158,6 +162,11 @@
 				TargetAttributes = {
 					69936D7919673EF5004518A0 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					69936D8B19673EF5004518A0 = {
 						CreatedOnToolsVersion = 6.0;
